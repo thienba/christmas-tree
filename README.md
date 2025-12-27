@@ -123,6 +123,27 @@ When no hand is detected, you can:
 - Instanced rendering for performance
 - Bloom and post-processing effects
 
+## 🤖 GitHub Actions CI/CD
+
+This project includes automated build and deployment workflows:
+
+### Quick Start
+1. Push to GitHub - builds run automatically
+2. Check the `Actions` tab to monitor builds
+3. Download build artifacts or deploy to platforms
+
+### Available Workflows
+- **CI Workflow** - Lints and tests builds on every push
+- **Deploy Workflow** - Builds and deploys to multiple platforms
+
+### Supported Deployment Targets
+- ✅ GitHub Pages
+- ✅ Vercel
+- ✅ Netlify
+- ✅ Any static hosting
+
+📖 **Full documentation:** See [`.github/ACTIONS.md`](.github/ACTIONS.md) for detailed setup instructions.
+
 ## 🎅 Happy Holidays!
 
 May your code be merry and bright! 🎄✨

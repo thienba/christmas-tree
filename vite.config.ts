@@ -4,8 +4,14 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
+    
+    // For GitHub Pages: set base to your repo name
+    // Example: base: '/christmas-tree/'
+    // For custom domain or root deployment: base: '/'
+    const base = env.VITE_BASE_PATH || '/';
+    
     return {
-      base: '/',
+      base: base,
       server: {
         port: 3010,
         host: '0.0.0.0',
